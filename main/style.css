@@ -52,10 +52,10 @@
 
 .main-box {
     display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   gap: 30px;
   margin: 40px 0;
-  column-count: 2;
+  /* column-count: 2; */
 }
 
 .two {
@@ -71,4 +71,11 @@
 
 .right-text {
     font-size: large;
+}
+
+.mini-right-box {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
 }
