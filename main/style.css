@@ -5,8 +5,9 @@
     /* background-color: #E1DEFC; */
     z-index: 100;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 h1 {
+    font-family: 'embed', sans-serif;
     font-size: 36px;
     line-height: 50px;
     text-align: center;
