@@ -6,6 +6,8 @@
     z-index: 100;
 }
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap');
+
 h1 {
     font-family: 'embed', sans-serif;
     font-size: 36px;
@@ -64,12 +66,12 @@ h1 {
 }
 
 .two {
+    font-family: "Imperial Script", cursive;
     text-align: center;
     background-color: aliceblue;
     margin: 15px 25px;
-    padding: 15px 25px;
-    border-radius: 20px;           
- 
+    padding: 15px 25px;   
+    border-color: aliceblue;
 }
 
 .right-text {
@@ -87,3 +89,8 @@ h1 {
     justify-content: space-between;
     grid-template-columns: 1fr 1fr;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
