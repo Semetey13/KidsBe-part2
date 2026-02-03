@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #E1DEFC; */
+    /* background-color:#f8f9ff; */
     z-index: 100;
 }
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
@@ -72,6 +72,7 @@ h1 {
     margin: 15px 25px;
     padding: 15px 25px;   
     border-color: aliceblue;
+    border-radius: 20px;
 }
 
 .right-text {
@@ -88,6 +89,30 @@ h1 {
     align-items: center;
     justify-content: space-between;
     grid-template-columns: 1fr 1fr;
+}
+
+.sixbox {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-areas: 
+      "a b c"
+      "d e f";
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px;
+    padding: 24px 16px;
+}
+
+.three {
+    font-family: 'embed', sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
