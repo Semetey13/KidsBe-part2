@@ -3,13 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     /* background-color:#f8f9ff; */
-    z-index: 100;
+    /* z-index: 100; */
 }
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap'); */
+
+body {
+    background-color: #f8f9ff;
+    font-family: 'DM Serif Text', serif;
+}
+
 
 h1 {
-    font-family: 'embed', sans-serif;
+    /* font-family: 'embed', sans-serif; */
     font-size: 36px;
     line-height: 50px;
     text-align: center;
@@ -17,7 +23,7 @@ h1 {
 
 .img-container {
     position: relative;
-    z-index: 10;
+    z-index: 1;
 }
 
 .layer1 {
@@ -51,6 +57,8 @@ h1 {
 }
 
 .one {
+    position: relative;
+    z-index: 5;
     text-align: center;
     background-color: aliceblue;
     margin: 15px 25px;
@@ -63,6 +71,7 @@ h1 {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin: 40px 0;
+    padding: 0 20px;
 }
 
 .two {
@@ -76,27 +85,27 @@ h1 {
 }
 
 .right-text {
-    margin: 100px 0;
-    font-weight: 400;
+    margin: 40px 0;
+    /* font-weight: 400; */
     font-size: 20px;
     line-height: 30px;
-    letter-spacing: 0%;
+    /* letter-spacing: 0%; */
 
 }
 
 .mini-right-box {
     display: grid;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     grid-template-columns: 1fr 1fr;
 }
 
 .sixbox {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-areas: 
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-areas: 
       "a b c"
-      "d e f";
+      "d e f"; */
 }
 
 .card {
@@ -115,7 +124,62 @@ h1 {
     text-align: center;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 768px) {
+
+    /* Заголовки */
+    h1 {
+        font-size: 26px;
+        line-height: 34px;
+        padding: 0 10px;
+    }
+
+    /* Основная сетка */
+    .main-box {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /* ❗ КЛЮЧЕВОЕ ИСПРАВЛЕНИЕ
+       убираем отрицательный margin */
+    .mini-left-box {
+        margin-top: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .mini-right-box {
+        grid-template-columns: 1fr;
+    }
+
     
+    .layer1 {
+        width: 90%;
+        margin: 0 auto;
+        transform: none;
+        display: block;
+    }
+
+    .layer2,
+    .layer3 {
+        display: none;
+    }
+
+    /* Карточки */
+    .one,
+    .two {
+        margin: 10px;
+    }
+
+    /* 6 карточек */
+    .sixbox {
+        grid-template-columns: 1fr;
+    }
+
+    .right-text {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 20px 10px;
+        text-align: center;
+    }
 }
+
 
